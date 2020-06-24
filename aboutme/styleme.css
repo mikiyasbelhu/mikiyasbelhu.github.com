@@ -1,0 +1,29 @@
+body {
+  background-color:#585546;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h3 {
+    color: #9fc1f7;
+}
+
+a {
+    color: red;
+}
+
+.behaviour {
+    color: yellow;
+}
+
+ol li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mood {
+    height: 250px;
+}
+
+.validation {
+    float: right;
+}
