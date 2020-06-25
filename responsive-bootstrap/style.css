@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(173, 216, 230);
+}
+
+.nav {
+    background-color: rgb(47, 79, 79);
+}
+
+.nav-item {
+    border: 1px black solid;
+}
+
+.nav-item:nth-child(n+2) {
+    margin-left: -1px;
+}
+
+.column1 {
+    background-color: #aaaaaa;
+    height: 200px;
+}
+
+.column2 {
+    background-color: #bbbbbb;
+    height: 200px;
+}
+
+.column3 {
+    background-color: #cccccc;
+    height: 200px;
+}
+
+footer {
+    background-color: rgb(47, 79, 79);
+}
+
+.validation {
+    opacity: 0.5;
+    bottom: 0px;
+    right: 0px;
+}
