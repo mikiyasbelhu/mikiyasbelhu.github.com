@@ -1,0 +1,11 @@
+.nav-item {
+    border-left: white 1px solid; padding-left: 2em; padding-right: 2em;
+}
+
+#hello {
+    color:#fff;padding-left: 2em; padding-right: 1em;
+}
+
+#page-title {
+    font-size: 2em
+}

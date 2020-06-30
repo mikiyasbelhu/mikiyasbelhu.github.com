@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="Mikiyas B. Shewangzaw">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cerulean/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>MIU Golden Dome Market</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand pr-5" href="">MIU Golden Dome Market : : : SRM System</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Suppliers</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <span id="hello">Hello!</span>
+        <a href="#" class="btn btn-secondary">Sign Out</a>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container pt-2">
+    <div class="mb-3">
+      <span id="page-title">New Product Form</span>
+    </div>
+
+    <form id="newProductForm" method="post" action="">
+      <fieldset>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="title">Product Number</label>
+              <input id="title" name="title" type="text" class="form-control" autofocus>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="stock">Quantity in stock</label>
+              <input id="stock" name="stock" type="number" class="form-control" value="0">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="isbn">Name</label>
+              <input id="isbn" name="isbn" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="supplier">Supplier</label>
+              <select id="supplier" name="supplier" type="text" class="form-control">
+                <option value="" disabled selected>Select a supplier</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="publisher">Unit Price</label>
+              <input id="publisher" name="publisher" class="form-control" placeholder="0.0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="dateSupplied">Date supplied</label>
+              <input id="dateSupplied" name="dateSupplied" type="text" class="form-control" placeholder="yyyy-mm-dd" pattern="^(19|20)\d{2}-(0|1)\d-(0|1|2|3)\d$" title="please enter a valid date" required>
+              <small id="date" class="form-text text-muted">Enter a valid Date.</small>
+            </div>
+          </div>
+        </div>
+        <div class="float-right">
+          <button type="reset" class="btn btn-outline-dark">Reset</button>&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-outline-warning">Cancel</button>&nbsp;&nbsp;&nbsp;
+          <button id="btnSubmit" type="submit" class="btn btn-outline-primary">Add Product</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
