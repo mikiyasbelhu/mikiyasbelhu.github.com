@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Functional Javascript</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/9.0.2/sinon.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+    </script>
+
+    <script src="myCode.js"></script>
+    <script src="myTest.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-5">Basic Javascript</h1>
+        <p class="lead">Look in the Chrome developer console to see the output with CTRL + SHIFT + I. <br />
+            Or on Firefox with CTRL + SHIFT + K.</p>
+        <hr class="my-4">
+        <p>If you are still unable to open the developer tools for your browser click learn more.</p>
+        <a class="btn btn-secondary btn-lg" target=”_blank” href="https://balsamiq.com/support/faqs/browserconsole/"
+            role="button">Learn more</a>
+    </div>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script>
+</body>
+
+</html>
