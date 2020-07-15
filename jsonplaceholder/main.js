@@ -6,7 +6,7 @@ $(function() {
 });
 
 function getUserInfo(id) {
-    $.get("http://jsonplaceholder.typicode.com/users/" + id)
+    $.get("https://jsonplaceholder.typicode.com/users/" + id)
         .done(res => {
             const info = $("<dl>");
             for (data in res) {
@@ -22,7 +22,7 @@ function getUserInfo(id) {
 }
 
 function getUserPosts(id) {
-    $.get("http://jsonplaceholder.typicode.com/posts", { userId: id })
+    $.get("https://jsonplaceholder.typicode.com/posts", { userId: id })
         .done(res => {
             $("#comments").html('Select a post to see comments');
             const posts = $("<div>");
@@ -52,7 +52,7 @@ function getUserPosts(id) {
 }
 
 function getPostComments(id) {
-    $.get("http://jsonplaceholder.typicode.com/comments", { postId: id })
+    $.get("https://jsonplaceholder.typicode.com/comments", { postId: id })
         .done(res => {
             const comments = $("<div>");
             for (data of res) {
